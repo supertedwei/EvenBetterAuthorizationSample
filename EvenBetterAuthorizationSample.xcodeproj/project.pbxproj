@@ -363,6 +363,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
+				TargetAttributes = {
+					E4AD7A851608DB4A00F594A2 = {
+						DevelopmentTeam = Y88NX8WHT2;
+						ProvisioningStyle = Automatic;
+					};
+					E4C32DCA16023A97002AFAB3 = {
+						DevelopmentTeam = Y88NX8WHT2;
+						ProvisioningStyle = Automatic;
+					};
+					E4CD036615E7A2C300FDC22C = {
+						DevelopmentTeam = Y88NX8WHT2;
+						ProvisioningStyle = Automatic;
+					};
+					E4ED7B7E15E79B83002AD912 = {
+						DevelopmentTeam = Y88NX8WHT2;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = E4ED7B7915E79B83002AD912 /* Build configuration list for PBXProject "EvenBetterAuthorizationSample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -531,7 +549,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "App-Sandboxed/App-Sandboxed.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y88NX8WHT2;
 				INFOPLIST_FILE = "App-Sandboxed/App-Sandboxed-Info.plist";
 				PRODUCT_NAME = "EvenBetterAuthorizationSample-Sandboxed";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -543,7 +563,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "App-Sandboxed/App-Sandboxed.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y88NX8WHT2;
 				INFOPLIST_FILE = "App-Sandboxed/App-Sandboxed-Info.plist";
 				PRODUCT_NAME = "EvenBetterAuthorizationSample-Sandboxed";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -554,6 +576,8 @@
 		E4C32DD716023A97002AFAB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = Y88NX8WHT2;
 				INFOPLIST_FILE = "App-Sandboxed/XPCService/XPCService-Info.plist";
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.XPCService";
@@ -564,6 +588,8 @@
 		E4C32DD816023A97002AFAB3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = Y88NX8WHT2;
 				INFOPLIST_FILE = "App-Sandboxed/XPCService/XPCService-Info.plist";
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.XPCService";
@@ -574,6 +600,8 @@
 		E4CD036F15E7A2C300FDC22C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = Y88NX8WHT2;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
 				OTHER_LDFLAGS = (
 					"-sectcreate",
@@ -593,6 +621,8 @@
 		E4CD037015E7A2C300FDC22C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = Y88NX8WHT2;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
 				OTHER_LDFLAGS = (
 					"-sectcreate",
@@ -704,6 +734,8 @@
 		E4ED7B9115E79B83002AD912 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = Y88NX8WHT2;
 				INFOPLIST_FILE = "App/App-Info.plist";
 				PRODUCT_NAME = EvenBetterAuthorizationSample;
 				WRAPPER_EXTENSION = app;
@@ -713,6 +745,8 @@
 		E4ED7B9215E79B83002AD912 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = Y88NX8WHT2;
 				INFOPLIST_FILE = "App/App-Info.plist";
 				PRODUCT_NAME = EvenBetterAuthorizationSample;
 				WRAPPER_EXTENSION = app;
