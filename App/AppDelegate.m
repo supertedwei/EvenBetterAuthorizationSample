@@ -359,10 +359,10 @@
     
     //Change desktop
     if (_darkModeOn) {
-        [self turnInternetOn];
+        [self turnInternetOff];
     }
     else {
-        [self turnInternetOff];
+        [self turnInternetOn];
     }
 }
 
@@ -375,11 +375,33 @@
 }
 
 - (void)turnInternetOff {
+    [self connectAndExecuteCommandBlock:^(NSError * connectError) {
+        if (connectError != nil) {
+            [self logError:connectError];
+        } else {
+            [[self.helperToolConnection remoteObjectProxyWithErrorHandler:^(NSError * proxyError) {
+                [self logError:proxyError];
+            }] turnInternetOff:^(NSString *version) {
+                [self logWithFormat:@"turnInternetOff = %@\n", version];
+            }];
+        }
+    }];
 //    system("networksetup -setwebproxy Wi-Fi 192.168.1.100");
 //    system("networksetup -setsecurewebproxy Wi-Fi 192.168.1.100");
 }
 
 - (void)turnInternetOn {
+    [self connectAndExecuteCommandBlock:^(NSError * connectError) {
+        if (connectError != nil) {
+            [self logError:connectError];
+        } else {
+            [[self.helperToolConnection remoteObjectProxyWithErrorHandler:^(NSError * proxyError) {
+                [self logError:proxyError];
+            }] turnInternetOn:^(NSString *version) {
+                [self logWithFormat:@"turnInternetOn = %@\n", version];
+            }];
+        }
+    }];
 //    system("networksetup -setwebproxystate Wi-Fi off");
 //    system("networksetup -setsecurewebproxystate Wi-Fi off");
 }

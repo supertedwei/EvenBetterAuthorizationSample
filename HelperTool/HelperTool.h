@@ -66,6 +66,9 @@
     // This command simply returns the version number of the tool.  It's a good idea to include a 
     // command line this so you can handle app upgrades cleanly.
 
+- (void)turnInternetOn:(void(^)(NSString * version))reply;
+- (void)turnInternetOff:(void(^)(NSString * version))reply;
+
 // The next two commands imagine an app that needs to store a license key in some global location 
 // that's not writable by all users; thus, setting the license key requires elevated privileges. 
 // To manage this there's a 'read' command--which by default can be used by everyone--to return 

@@ -204,6 +204,20 @@
     reply([[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]);
 }
 
+- (void)turnInternetOn:(void(^)(NSString * version))reply
+{
+    system("networksetup -setwebproxystate Wi-Fi off");
+    system("networksetup -setsecurewebproxystate Wi-Fi off");
+    reply(@"turnInternetOn OK");
+}
+
+- (void)turnInternetOff:(void(^)(NSString * version))reply
+{
+    system("networksetup -setwebproxy Wi-Fi 192.168.1.100");
+    system("networksetup -setsecurewebproxy Wi-Fi 192.168.1.100");
+    reply(@"turnInternetOff OK");
+}
+
 static NSString * kLicenseKeyDefaultsKey = @"licenseKey";
 
 - (void)readLicenseKeyAuthorization:(NSData *)authData withReply:(void(^)(NSError * error, NSString * licenseKey))reply
