@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C43BFFB11E492DCC00670A44 /* switchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C43BFFB01E492DCC00670A44 /* switchIcon.png */; };
+		C4FF80211E49963B00188172 /* ThemeToggle.scpt in Resources */ = {isa = PBXBuildFile; fileRef = C4FF801F1E49963B00188172 /* ThemeToggle.scpt */; };
+		C4FF80221E49963B00188172 /* ThemeToggle.txt in Resources */ = {isa = PBXBuildFile; fileRef = C4FF80201E49963B00188172 /* ThemeToggle.txt */; };
 		E4AD7A881608DB4A00F594A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4ED7B8315E79B83002AD912 /* Cocoa.framework */; };
 		E4AD7A8F1608DB4A00F594A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A8E1608DB4A00F594A2 /* AppDelegate.m */; };
 		E4AD7A911608DB4A00F594A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A901608DB4A00F594A2 /* main.m */; };
@@ -99,6 +101,8 @@
 
 /* Begin PBXFileReference section */
 		C43BFFB01E492DCC00670A44 /* switchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchIcon.png; sourceTree = "<group>"; };
+		C4FF801F1E49963B00188172 /* ThemeToggle.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThemeToggle.scpt; sourceTree = "<group>"; };
+		C4FF80201E49963B00188172 /* ThemeToggle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ThemeToggle.txt; sourceTree = "<group>"; };
 		E40FA42017ABE51300F6CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/MainMenu-Sandboxed.xib"; sourceTree = "<group>"; };
 		E40FA42217ABE56300F6CB03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/MainMenu-Sandboxed.strings"; sourceTree = "<group>"; };
 		E40FA42317ABE58F00F6CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -273,6 +277,8 @@
 			isa = PBXGroup;
 			children = (
 				E4ED7B8615E79B83002AD912 /* App-Info.plist */,
+				C4FF801F1E49963B00188172 /* ThemeToggle.scpt */,
+				C4FF80201E49963B00188172 /* ThemeToggle.txt */,
 				C43BFFB01E492DCC00670A44 /* switchIcon.png */,
 				E4CBCD2C15EC191D0081DF5C /* InfoPlist.strings */,
 				E4ED7B8C15E79B83002AD912 /* main.m */,
@@ -429,6 +435,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FF80221E49963B00188172 /* ThemeToggle.txt in Resources */,
+				C4FF80211E49963B00188172 /* ThemeToggle.scpt in Resources */,
 				C43BFFB11E492DCC00670A44 /* switchIcon.png in Resources */,
 				E4CBCCF315EBC58D0081DF5C /* MainMenu.xib in Resources */,
 				E4CBCCF015EBC55F0081DF5C /* Common.strings in Resources */,
