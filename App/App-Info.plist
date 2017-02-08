@@ -31,7 +31,7 @@
 	<key>SMPrivilegedExecutables</key>
 	<dict>
 		<key>com.example.apple-samplecode.EBAS.HelperTool</key>
-		<string>identifier "com.example.apple-samplecode.EBAS.HelperTool" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: jdwei@hotmail.com (G33QBT44XX)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+		<string>identifier "com.example.apple-samplecode.EBAS.HelperTool" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: Jiade Wei (ZT3TDPBNG7)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 	</dict>
 </dict>
 </plist>

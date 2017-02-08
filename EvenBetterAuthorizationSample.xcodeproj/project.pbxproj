@@ -264,12 +264,12 @@
 				LastUpgradeCheck = 0460;
 				TargetAttributes = {
 					E4CD036615E7A2C300FDC22C = {
-						DevelopmentTeam = Y88NX8WHT2;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 5NJ8AN9UMP;
+						ProvisioningStyle = Manual;
 					};
 					E4ED7B7E15E79B83002AD912 = {
-						DevelopmentTeam = Y88NX8WHT2;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 5NJ8AN9UMP;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -395,7 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = Y88NX8WHT2;
+				DEVELOPMENT_TEAM = 5NJ8AN9UMP;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
 				OTHER_LDFLAGS = (
 					"-sectcreate",
@@ -416,7 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = Y88NX8WHT2;
+				DEVELOPMENT_TEAM = 5NJ8AN9UMP;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
 				OTHER_LDFLAGS = (
 					"-sectcreate",
@@ -529,7 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = Y88NX8WHT2;
+				DEVELOPMENT_TEAM = 5NJ8AN9UMP;
 				INFOPLIST_FILE = "App/App-Info.plist";
 				PRODUCT_NAME = EvenBetterAuthorizationSample;
 				WRAPPER_EXTENSION = app;
@@ -540,7 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = Y88NX8WHT2;
+				DEVELOPMENT_TEAM = 5NJ8AN9UMP;
 				INFOPLIST_FILE = "App/App-Info.plist";
 				PRODUCT_NAME = EvenBetterAuthorizationSample;
 				WRAPPER_EXTENSION = app;
