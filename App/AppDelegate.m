@@ -359,10 +359,10 @@
     
     //Change desktop
     if (_darkModeOn) {
-        [self turnInternetOff];
+        [self turnInternetOn];
     }
     else {
-        [self turnInternetOn];
+        [self turnInternetOff];
     }
 }
 
