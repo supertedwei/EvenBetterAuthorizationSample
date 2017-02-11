@@ -60,6 +60,8 @@
 
 @property (nonatomic, assign, readwrite) IBOutlet NSWindow *    window;
 @property (nonatomic, assign, readwrite) IBOutlet NSTextView *  textView;
+@property (nonatomic, assign, readwrite) IBOutlet NSTextField *  taskNameView;
+@property (nonatomic, assign, readwrite) IBOutlet NSTextField *  taskLengthView;
 @property (strong, nonatomic) NSStatusItem *statusItem;
 @property (assign, nonatomic) BOOL darkModeOn;
 
@@ -68,6 +70,7 @@
 - (IBAction)readLicenseAction:(id)sender;
 - (IBAction)writeLicenseAction:(id)sender;
 - (IBAction)bindAction:(id)sender;
+- (IBAction)startTimerAction:(id)sender;
 
 // private stuff
 
@@ -333,6 +336,37 @@
     }];
 }
 
+- (IBAction)startTimerAction:(id)sender
+// Called when the user clicks the Get Version button.  This is the simplest form of
+// NSXPCConnection request because it doesn't require any authorization.
+{
+    #pragma unused(sender)
+    NSString * taskLength = [_taskLengthView stringValue];
+    NSInteger intTaskLength = [taskLength integerValue];
+    if (intTaskLength == 0) {
+        [self logWithFormat:@"Task Length is either 0 or not a number.\n"];
+        return;
+    }
+    
+    [self logWithFormat:@"Start a task '%@' for %d minutes.\n", [_taskNameView stringValue], intTaskLength];
+    
+    _taskNameView.stringValue = @"";
+    _taskLengthView.stringValue = @"";
+    
+    [self turnInternetOn];
+    [NSTimer scheduledTimerWithTimeInterval:intTaskLength * 60
+                                     target:self
+                                   selector:@selector(timeUp:)
+                                   userInfo:nil
+                                    repeats:NO];
+}
+
+- (void)timeUp:(id)sender {
+    #pragma unused(sender)
+    [self logWithFormat:@"timeUp\n"];
+    [self turnInternetOff];
+}
+
 - (void)refreshDarkMode {
     NSString * value = [[NSUserDefaults standardUserDefaults] stringForKey:@"AppleInterfaceStyle"];
     if ([value isEqualToString:@"Dark"]) {
@@ -382,7 +416,7 @@
             [[self.helperToolConnection remoteObjectProxyWithErrorHandler:^(NSError * proxyError) {
                 [self logError:proxyError];
             }] turnInternetOff:^(NSString *version) {
-                [self logWithFormat:@"turnInternetOff = %@\n", version];
+                [self logWithFormat:@"Internet(OFF) = %@\n", version];
             }];
         }
     }];
@@ -398,7 +432,7 @@
             [[self.helperToolConnection remoteObjectProxyWithErrorHandler:^(NSError * proxyError) {
                 [self logError:proxyError];
             }] turnInternetOn:^(NSString *version) {
-                [self logWithFormat:@"turnInternetOn = %@\n", version];
+                [self logWithFormat:@"Internet(ON) = %@\n", version];
             }];
         }
     }];
