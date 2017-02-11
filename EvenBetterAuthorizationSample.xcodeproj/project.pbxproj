@@ -54,27 +54,13 @@
 		C43BFFB01E492DCC00670A44 /* switchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchIcon.png; sourceTree = "<group>"; };
 		C4FF801F1E49963B00188172 /* ThemeToggle.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThemeToggle.scpt; sourceTree = "<group>"; };
 		C4FF80201E49963B00188172 /* ThemeToggle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ThemeToggle.txt; sourceTree = "<group>"; };
-		E40FA42017ABE51300F6CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/MainMenu-Sandboxed.xib"; sourceTree = "<group>"; };
-		E40FA42217ABE56300F6CB03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/MainMenu-Sandboxed.strings"; sourceTree = "<group>"; };
 		E40FA42317ABE58F00F6CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E40FA42417ABE59600F6CB03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		E40FA42517ABE62000F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		E40FA42617ABE62000F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "de.lproj/MainMenu-Sandboxed.strings"; sourceTree = "<group>"; };
 		E40FA42717ABE62100F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E40FA42817ABE62200F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E40FA42917ABE62300F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Common.strings; sourceTree = "<group>"; };
 		E456726C15E7E4B80050ECAB /* Uninstall.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Uninstall.sh; sourceTree = "<group>"; };
-		E4AD7A8A1608DB4A00F594A2 /* App-Sandboxed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "App-Sandboxed-Info.plist"; sourceTree = "<group>"; };
-		E4AD7A8D1608DB4A00F594A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E4AD7A8E1608DB4A00F594A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E4AD7A901608DB4A00F594A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E4AD7A9E1608DBEC00F594A2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E4AD7A9F1608DBEC00F594A2 /* XPCService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XPCService-Info.plist"; sourceTree = "<group>"; };
-		E4AD7AA01608DBEC00F594A2 /* XPCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCService.h; sourceTree = "<group>"; };
-		E4AD7AA11608DBEC00F594A2 /* XPCService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCService.m; sourceTree = "<group>"; };
-		E4AD7AB81609093B00F594A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4AD7ACE160917C200F594A2 /* Read Me About EvenBetterAuthorizationSample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Read Me About EvenBetterAuthorizationSample.txt"; sourceTree = "<group>"; };
-		E4C32DC516023990002AFAB3 /* App-Sandboxed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "App-Sandboxed.entitlements"; sourceTree = "<group>"; };
 		E4C372E315E7CC10007554D3 /* HelperTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperTool-Info.plist"; sourceTree = "<group>"; };
 		E4C372E415E7CC10007554D3 /* HelperTool-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperTool-Launchd.plist"; sourceTree = "<group>"; };
 		E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
@@ -119,32 +105,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E4AD7A891608DB4A00F594A2 /* App-Sandboxed */ = {
-			isa = PBXGroup;
-			children = (
-				E4AD7A8A1608DB4A00F594A2 /* App-Sandboxed-Info.plist */,
-				E4AD7AB91609093B00F594A2 /* InfoPlist.strings */,
-				E4C32DC516023990002AFAB3 /* App-Sandboxed.entitlements */,
-				E4AD7A901608DB4A00F594A2 /* main.m */,
-				E4AD7AAE1608DD8000F594A2 /* MainMenu-Sandboxed.xib */,
-				E4AD7A8D1608DB4A00F594A2 /* AppDelegate.h */,
-				E4AD7A8E1608DB4A00F594A2 /* AppDelegate.m */,
-				E4AD7A9D1608DBEC00F594A2 /* XPCService */,
-			);
-			path = "App-Sandboxed";
-			sourceTree = "<group>";
-		};
-		E4AD7A9D1608DBEC00F594A2 /* XPCService */ = {
-			isa = PBXGroup;
-			children = (
-				E4AD7A9F1608DBEC00F594A2 /* XPCService-Info.plist */,
-				E4AD7A9E1608DBEC00F594A2 /* main.m */,
-				E4AD7AA01608DBEC00F594A2 /* XPCService.h */,
-				E4AD7AA11608DBEC00F594A2 /* XPCService.m */,
-			);
-			path = XPCService;
-			sourceTree = "<group>";
-		};
 		E4CBCCE815EBB50D0081DF5C /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +132,6 @@
 			children = (
 				E4AD7ACE160917C200F594A2 /* Read Me About EvenBetterAuthorizationSample.txt */,
 				E4ED7B8515E79B83002AD912 /* App */,
-				E4AD7A891608DB4A00F594A2 /* App-Sandboxed */,
 				E4CBCCE815EBB50D0081DF5C /* Common */,
 				E4CD036B15E7A2C300FDC22C /* HelperTool */,
 				E4ED7B8215E79B83002AD912 /* Frameworks */,
@@ -341,25 +300,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E4AD7AAE1608DD8000F594A2 /* MainMenu-Sandboxed.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E40FA42017ABE51300F6CB03 /* Base */,
-				E40FA42217ABE56300F6CB03 /* en */,
-				E40FA42617ABE62000F6CB03 /* de */,
-			);
-			name = "MainMenu-Sandboxed.xib";
-			sourceTree = "<group>";
-		};
-		E4AD7AB91609093B00F594A2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E4AD7AB81609093B00F594A2 /* en */,
-				E40FA42817ABE62200F6CB03 /* de */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		E4CBCCF215EBC55F0081DF5C /* Common.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
