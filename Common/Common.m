@@ -69,7 +69,7 @@
 //   to look up a localized version of the string in "Common.strings".
 //
 //   The kCommandKeyAuthRightDesc strings here contain NinjaMode as as shortcut for 
-//   EvenBetterAuthorizationSample.  However, the values in "Common.strings" contain the fully 
+//   NinjaMode.  However, the values in "Common.strings" contain the fully 
 //   expanded name, which allows you to see whether localization is working properly.
 //
 //   These strings are also surrounded by NSLocalizedString, which makes it easy to use 

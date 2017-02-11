@@ -73,7 +73,7 @@
 		E4CBCD2B15EC191D0081DF5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.NinjaMode.HelperTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "com.example.apple-samplecode.NinjaMode.HelperTool"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CD036C15E7A2C300FDC22C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E4ED7B7F15E79B83002AD912 /* EvenBetterAuthorizationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvenBetterAuthorizationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4ED7B7F15E79B83002AD912 /* NinjaMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinjaMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4ED7B8315E79B83002AD912 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E4ED7B8615E79B83002AD912 /* App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App-Info.plist"; sourceTree = "<group>"; };
 		E4ED7B8915E79B83002AD912 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 		E4ED7B8015E79B83002AD912 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4ED7B7F15E79B83002AD912 /* EvenBetterAuthorizationSample.app */,
+				E4ED7B7F15E79B83002AD912 /* NinjaMode.app */,
 				E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.NinjaMode.HelperTool */,
 			);
 			name = Products;
@@ -208,8 +208,8 @@
 				E4AD7AA61608DC2D00F594A2 /* PBXTargetDependency */,
 			);
 			name = App;
-			productName = EvenBetterAuthorizationSample;
-			productReference = E4ED7B7F15E79B83002AD912 /* EvenBetterAuthorizationSample.app */;
+			productName = NinjaMode;
+			productReference = E4ED7B7F15E79B83002AD912 /* NinjaMode.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -230,7 +230,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E4ED7B7915E79B83002AD912 /* Build configuration list for PBXProject "EvenBetterAuthorizationSample" */;
+			buildConfigurationList = E4ED7B7915E79B83002AD912 /* Build configuration list for PBXProject "NinjaMode" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -469,7 +469,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 5NJ8AN9UMP;
 				INFOPLIST_FILE = "App/App-Info.plist";
-				PRODUCT_NAME = EvenBetterAuthorizationSample;
+				PRODUCT_NAME = NinjaMode;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -480,7 +480,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 5NJ8AN9UMP;
 				INFOPLIST_FILE = "App/App-Info.plist";
-				PRODUCT_NAME = EvenBetterAuthorizationSample;
+				PRODUCT_NAME = NinjaMode;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -497,7 +497,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4ED7B7915E79B83002AD912 /* Build configuration list for PBXProject "EvenBetterAuthorizationSample" */ = {
+		E4ED7B7915E79B83002AD912 /* Build configuration list for PBXProject "NinjaMode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4ED7B8E15E79B83002AD912 /* Debug */,
