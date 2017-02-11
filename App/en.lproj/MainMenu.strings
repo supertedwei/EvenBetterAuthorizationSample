@@ -14,14 +14,14 @@
 /* Class = "NSMenu"; title = "AMainMenu"; ObjectID = "29"; */
 "29.title" = "AMainMenu";
 
-/* Class = "NSMenuItem"; title = "NinjaMode"; ObjectID = "56"; */
-"56.title" = "NinjaMode";
+/* Class = "NSMenuItem"; title = "Ninja Mode"; ObjectID = "56"; */
+"56.title" = "Ninja Mode";
 
-/* Class = "NSMenu"; title = "NinjaMode"; ObjectID = "57"; */
-"57.title" = "NinjaMode";
+/* Class = "NSMenu"; title = "Ninja Mode"; ObjectID = "57"; */
+"57.title" = "Ninja Mode";
 
-/* Class = "NSMenuItem"; title = "About NinjaMode"; ObjectID = "58"; */
-"58.title" = "About NinjaMode";
+/* Class = "NSMenuItem"; title = "About Ninja Mode"; ObjectID = "58"; */
+"58.title" = "About Ninja Mode";
 
 /* Class = "NSMenuItem"; title = "Close"; ObjectID = "73"; */
 "73.title" = "Close";
@@ -32,8 +32,8 @@
 /* Class = "NSMenu"; title = "Help"; ObjectID = "106"; */
 "106.title" = "Help";
 
-/* Class = "NSMenuItem"; title = "NinjaMode Help"; ObjectID = "111"; */
-"111.title" = "NinjaMode Help";
+/* Class = "NSMenuItem"; title = "Ninja Mode Help"; ObjectID = "111"; */
+"111.title" = "Ninja Mode Help";
 
 /* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "129"; */
 "129.title" = "Preferences…";
@@ -44,11 +44,11 @@
 /* Class = "NSMenuItem"; title = "Services"; ObjectID = "131"; */
 "131.title" = "Services";
 
-/* Class = "NSMenuItem"; title = "Hide NinjaMode"; ObjectID = "134"; */
-"134.title" = "Hide NinjaMode";
+/* Class = "NSMenuItem"; title = "Hide Ninja Mode"; ObjectID = "134"; */
+"134.title" = "Hide Ninja Mode";
 
-/* Class = "NSMenuItem"; title = "Quit NinjaMode"; ObjectID = "136"; */
-"136.title" = "Quit NinjaMode";
+/* Class = "NSMenuItem"; title = "Quit Ninja Mode"; ObjectID = "136"; */
+"136.title" = "Quit Ninja Mode";
 
 /* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "145"; */
 "145.title" = "Hide Others";
@@ -152,8 +152,8 @@
 /* Class = "NSMenuItem"; title = "Smart Links"; ObjectID = "354"; */
 "354.title" = "Smart Links";
 
-/* Class = "NSWindow"; title = "NinjaMode"; ObjectID = "367"; */
-"367.title" = "NinjaMode";
+/* Class = "NSWindow"; title = "Ninja Mode"; ObjectID = "367"; */
+"367.title" = "Ninja Mode";
 
 /* Class = "NSButtonCell"; title = "Install"; ObjectID = "381"; */
 "381.title" = "Install";

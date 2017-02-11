@@ -5,10 +5,10 @@
  */
 
 /* prompt shown when user is required to authorize to read the license key */
-"NinjaMode is trying to read its license key." = "NinjaMode is trying to read its license key.";
+"Ninja Mode is trying to read its license key." = "Ninja Mode is trying to read its license key.";
 
 /* prompt shown when user is required to authorize to write the license key */
-"NinjaMode is trying to write its license key." = "NinjaMode is trying to set its license key.";
+"Ninja Mode is trying to write its license key." = "Ninja Mode is trying to set its license key.";
 
 /* prompt shown when user is required to authorize to start the web service */
-"NinjaMode is trying to start its web service." = "NinjaMode is trying to start its web service.";
+"Ninja Mode is trying to start its web service." = "Ninja Mode is trying to start its web service.";

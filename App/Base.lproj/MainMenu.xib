@@ -15,10 +15,10 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="AMainMenu" systemMenu="main" id="29" userLabel="MainMenu">
             <items>
-                <menuItem title="NinjaMode" id="56">
-                    <menu key="submenu" title="NinjaMode" systemMenu="apple" id="57">
+                <menuItem title="Ninja Mode" id="56">
+                    <menu key="submenu" title="Ninja Mode" systemMenu="apple" id="57">
                         <items>
-                            <menuItem title="About NinjaMode" id="58">
+                            <menuItem title="About Ninja Mode" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
@@ -37,7 +37,7 @@
                             <menuItem isSeparatorItem="YES" id="144">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Hide NinjaMode" keyEquivalent="h" id="134">
+                            <menuItem title="Hide Ninja Mode" keyEquivalent="h" id="134">
                                 <connections>
                                     <action selector="hide:" target="-1" id="369"/>
                                 </connections>
@@ -56,7 +56,7 @@
                             <menuItem isSeparatorItem="YES" id="149">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Quit NinjaMode" keyEquivalent="q" id="136">
+                            <menuItem title="Quit Ninja Mode" keyEquivalent="q" id="136">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="371"/>
                                 </connections>
@@ -242,7 +242,7 @@
                 <menuItem title="Help" id="103">
                     <menu key="submenu" title="Help" id="106">
                         <items>
-                            <menuItem title="NinjaMode Help" keyEquivalent="?" id="111">
+                            <menuItem title="Ninja Mode Help" keyEquivalent="?" id="111">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="360"/>
                                 </connections>
@@ -252,7 +252,7 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="NinjaMode" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" visibleAtLaunch="NO" animationBehavior="default" id="367" userLabel="Window">
+        <window title="Ninja Mode" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" visibleAtLaunch="NO" animationBehavior="default" id="367" userLabel="Window">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
             <rect key="contentRect" x="39" y="534" width="480" height="315"/>
