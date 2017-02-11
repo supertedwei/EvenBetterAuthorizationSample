@@ -68,7 +68,7 @@
 //   app when it needs to create the default right specification.  Actually, string is used 
 //   to look up a localized version of the string in "Common.strings".
 //
-//   The kCommandKeyAuthRightDesc strings here contain EBAS as as shortcut for 
+//   The kCommandKeyAuthRightDesc strings here contain NinjaMode as as shortcut for 
 //   EvenBetterAuthorizationSample.  However, the values in "Common.strings" contain the fully 
 //   expanded name, which allows you to see whether localization is working properly.
 //
@@ -87,26 +87,26 @@ static NSString * kCommandKeyAuthRightDesc    = @"authRightDescription";
     dispatch_once(&sOnceToken, ^{
         sCommandInfo = @{
             NSStringFromSelector(@selector(readLicenseKeyAuthorization:withReply:)) : @{
-                kCommandKeyAuthRightName    : @"com.example.apple-samplecode.EBAS.readLicenseKey", 
+                kCommandKeyAuthRightName    : @"com.example.apple-samplecode.NinjaMode.readLicenseKey", 
                 kCommandKeyAuthRightDefault : @kAuthorizationRuleClassAllow, 
                 kCommandKeyAuthRightDesc    : NSLocalizedString(
-                    @"EBAS is trying to read its license key.", 
+                    @"NinjaMode is trying to read its license key.", 
                     @"prompt shown when user is required to authorize to read the license key"
                 )
             },
             NSStringFromSelector(@selector(writeLicenseKey:authorization:withReply:)) : @{
-                kCommandKeyAuthRightName    : @"com.example.apple-samplecode.EBAS.writeLicenseKey", 
+                kCommandKeyAuthRightName    : @"com.example.apple-samplecode.NinjaMode.writeLicenseKey", 
                 kCommandKeyAuthRightDefault : @kAuthorizationRuleAuthenticateAsAdmin, 
                 kCommandKeyAuthRightDesc    : NSLocalizedString(
-                    @"EBAS is trying to write its license key.", 
+                    @"NinjaMode is trying to write its license key.", 
                     @"prompt shown when user is required to authorize to write the license key"
                 )
             },
             NSStringFromSelector(@selector(bindToLowNumberPortAuthorization:withReply:)) : @{
-                kCommandKeyAuthRightName    : @"com.example.apple-samplecode.EBAS.startWebService", 
+                kCommandKeyAuthRightName    : @"com.example.apple-samplecode.NinjaMode.startWebService", 
                 kCommandKeyAuthRightDefault : @kAuthorizationRuleClassAllow, 
                 kCommandKeyAuthRightDesc    : NSLocalizedString(
-                    @"EBAS is trying to start its web service.", 
+                    @"NinjaMode is trying to start its web service.", 
                     @"prompt shown when user is required to authorize to start the web service"
                 )
             }

@@ -10,7 +10,7 @@
 		C43BFFB11E492DCC00670A44 /* switchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C43BFFB01E492DCC00670A44 /* switchIcon.png */; };
 		C4FF80211E49963B00188172 /* ThemeToggle.scpt in Resources */ = {isa = PBXBuildFile; fileRef = C4FF801F1E49963B00188172 /* ThemeToggle.scpt */; };
 		C4FF80221E49963B00188172 /* ThemeToggle.txt in Resources */ = {isa = PBXBuildFile; fileRef = C4FF80201E49963B00188172 /* ThemeToggle.txt */; };
-		E4AD7AA91608DC4C00F594A2 /* com.example.apple-samplecode.EBAS.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */; };
+		E4AD7AA91608DC4C00F594A2 /* com.example.apple-samplecode.NinjaMode.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.NinjaMode.HelperTool */; };
 		E4C372F815E7D4D4007554D3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
 		E4C372FA15E7D4D8007554D3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
 		E4C372FC15E7D4FE007554D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372FB15E7D4FE007554D3 /* Foundation.framework */; };
@@ -33,7 +33,7 @@
 			containerPortal = E4ED7B7615E79B83002AD912 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E4CD036615E7A2C300FDC22C;
-			remoteInfo = "com.example.apple-samplecode.EBAS.HelperTool";
+			remoteInfo = "com.example.apple-samplecode.NinjaMode.HelperTool";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -44,7 +44,7 @@
 			dstPath = Contents/Library/LaunchServices;
 			dstSubfolderSpec = 1;
 			files = (
-				E4AD7AA91608DC4C00F594A2 /* com.example.apple-samplecode.EBAS.HelperTool in CopyFiles */,
+				E4AD7AA91608DC4C00F594A2 /* com.example.apple-samplecode.NinjaMode.HelperTool in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +60,6 @@
 		E40FA42717ABE62100F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E40FA42917ABE62300F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Common.strings; sourceTree = "<group>"; };
 		E456726C15E7E4B80050ECAB /* Uninstall.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Uninstall.sh; sourceTree = "<group>"; };
-		E4AD7ACE160917C200F594A2 /* Read Me About EvenBetterAuthorizationSample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Read Me About EvenBetterAuthorizationSample.txt"; sourceTree = "<group>"; };
 		E4C372E315E7CC10007554D3 /* HelperTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperTool-Info.plist"; sourceTree = "<group>"; };
 		E4C372E415E7CC10007554D3 /* HelperTool-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperTool-Launchd.plist"; sourceTree = "<group>"; };
 		E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
@@ -72,7 +71,7 @@
 		E4CBCCEB15EBBB8D0081DF5C /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		E4CBCCF115EBC55F0081DF5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Common.strings; sourceTree = "<group>"; };
 		E4CBCD2B15EC191D0081DF5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "com.example.apple-samplecode.EBAS.HelperTool"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.NinjaMode.HelperTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "com.example.apple-samplecode.NinjaMode.HelperTool"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CD036C15E7A2C300FDC22C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4ED7B7F15E79B83002AD912 /* EvenBetterAuthorizationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvenBetterAuthorizationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4ED7B8315E79B83002AD912 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -130,7 +129,6 @@
 		E4ED7B7415E79B83002AD912 = {
 			isa = PBXGroup;
 			children = (
-				E4AD7ACE160917C200F594A2 /* Read Me About EvenBetterAuthorizationSample.txt */,
 				E4ED7B8515E79B83002AD912 /* App */,
 				E4CBCCE815EBB50D0081DF5C /* Common */,
 				E4CD036B15E7A2C300FDC22C /* HelperTool */,
@@ -144,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				E4ED7B7F15E79B83002AD912 /* EvenBetterAuthorizationSample.app */,
-				E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */,
+				E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.NinjaMode.HelperTool */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,7 +190,7 @@
 			);
 			name = HelperTool;
 			productName = HelperTool;
-			productReference = E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */;
+			productReference = E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.NinjaMode.HelperTool */;
 			productType = "com.apple.product-type.tool";
 		};
 		E4ED7B7E15E79B83002AD912 /* App */ = {
@@ -347,7 +345,7 @@
 					__launchd_plist,
 					"HelperTool/HelperTool-Launchd.plist",
 				);
-				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.HelperTool";
+				PRODUCT_NAME = "com.example.apple-samplecode.NinjaMode.HelperTool";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -368,7 +366,7 @@
 					__launchd_plist,
 					"HelperTool/HelperTool-Launchd.plist",
 				);
-				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.HelperTool";
+				PRODUCT_NAME = "com.example.apple-samplecode.NinjaMode.HelperTool";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

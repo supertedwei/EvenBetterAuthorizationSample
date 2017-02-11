@@ -222,7 +222,7 @@
     
     success = SMJobBless(
         kSMDomainSystemLaunchd,
-        CFSTR("com.example.apple-samplecode.EBAS.HelperTool"),
+        CFSTR("com.example.apple-samplecode.NinjaMode.HelperTool"),
         self->_authRef,
         &error
     );
