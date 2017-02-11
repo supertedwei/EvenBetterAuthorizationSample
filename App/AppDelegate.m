@@ -123,7 +123,7 @@
     _statusItem.highlightMode = NO;
     _statusItem.toolTip = @"control-click to quit";
     
-    [_statusItem setAction:@selector(itemClicked:)];
+//    [_statusItem setAction:@selector(itemClicked:)];
     
     [self refreshDarkMode];
     [self turnInternetOff];
@@ -377,28 +377,28 @@
     }
 }
 
-- (void)itemClicked:(id)sender {
-    //Look for control click, close app if so
-    NSEvent *event = [NSApp currentEvent];
-    if([event modifierFlags] & NSControlKeyMask) {
-        [[NSApplication sharedApplication] terminate:self];
-        return;
-    }
-    
-    //Change theme
-    [self toggleTheme];
-    
-    //Toggle darkMode
-    _darkModeOn = !_darkModeOn;
-    
-    //Change desktop
-    if (_darkModeOn) {
-        [self turnInternetOn];
-    }
-    else {
-        [self turnInternetOff];
-    }
-}
+//- (void)itemClicked:(id)sender {
+//    //Look for control click, close app if so
+//    NSEvent *event = [NSApp currentEvent];
+//    if([event modifierFlags] & NSControlKeyMask) {
+//        [[NSApplication sharedApplication] terminate:self];
+//        return;
+//    }
+//    
+//    //Change theme
+//    [self toggleTheme];
+//    
+//    //Toggle darkMode
+//    _darkModeOn = !_darkModeOn;
+//    
+//    //Change desktop
+//    if (_darkModeOn) {
+//        [self turnInternetOn];
+//    }
+//    else {
+//        [self turnInternetOff];
+//    }
+//}
 
 - (void)toggleTheme {
     NSString* path = [[NSBundle mainBundle] pathForResource:@"ThemeToggle" ofType:@"scpt"];
@@ -406,6 +406,8 @@
     NSDictionary* errors = [NSDictionary dictionary];
     NSAppleScript* appleScript = [[NSAppleScript alloc] initWithContentsOfURL:url error:&errors];
     [appleScript executeAndReturnError:nil];
+    
+    [self refreshDarkMode];
 }
 
 - (void)turnInternetOff {
@@ -417,6 +419,10 @@
                 [self logError:proxyError];
             }] turnInternetOff:^(NSString *version) {
                 [self logWithFormat:@"Internet(OFF) = %@\n", version];
+                
+                if (_darkModeOn) {
+                    [self toggleTheme];
+                }
             }];
         }
     }];
@@ -433,6 +439,10 @@
                 [self logError:proxyError];
             }] turnInternetOn:^(NSString *version) {
                 [self logWithFormat:@"Internet(ON) = %@\n", version];
+                
+                if (!_darkModeOn) {
+                    [self toggleTheme];
+                }
             }];
         }
     }];
@@ -443,6 +453,10 @@
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     //Attempt to restore things back the way we found them
     [self turnInternetOn];
+    
+    if (_darkModeOn) {
+        [self toggleTheme];
+    }
 }
 
 
