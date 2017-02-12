@@ -348,7 +348,7 @@
         return;
     }
     
-    [self logWithFormat:@"Start a task '%@' for %d minutes.\n", [_taskNameView stringValue], intTaskLength];
+    [self logWithFormat:@"%4d | %@ \n", intTaskLength, [_taskNameView stringValue]];
     
     _taskNameView.stringValue = @"";
     _taskLengthView.stringValue = @"";
@@ -363,7 +363,7 @@
 
 - (void)timeUp:(id)sender {
     #pragma unused(sender)
-    [self logWithFormat:@"timeUp\n"];
+//    [self logWithFormat:@"timeUp\n"];
     [self turnInternetOff];
 }
 
@@ -418,7 +418,7 @@
             [[self.helperToolConnection remoteObjectProxyWithErrorHandler:^(NSError * proxyError) {
                 [self logError:proxyError];
             }] turnInternetOff:^(NSString *version) {
-                [self logWithFormat:@"Internet(OFF) = %@\n", version];
+//                [self logWithFormat:@"Internet(OFF) = %@\n", version];
                 
                 if (_darkModeOn) {
                     [self toggleTheme];
@@ -438,7 +438,7 @@
             [[self.helperToolConnection remoteObjectProxyWithErrorHandler:^(NSError * proxyError) {
                 [self logError:proxyError];
             }] turnInternetOn:^(NSString *version) {
-                [self logWithFormat:@"Internet(ON) = %@\n", version];
+//                [self logWithFormat:@"Internet(ON) = %@\n", version];
                 
                 if (!_darkModeOn) {
                     [self toggleTheme];
