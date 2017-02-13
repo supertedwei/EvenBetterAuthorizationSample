@@ -350,7 +350,7 @@
         return;
     }
     
-    [self logWithFormat:@"%d | %@ \n", intTaskLength, [_taskNameView stringValue]];
+    [self logWithFormat:@"% 4d | %@ \n", intTaskLength, [_taskNameView stringValue]];
     
     _taskNameView.stringValue = @"";
     _taskLengthView.stringValue = @"";
