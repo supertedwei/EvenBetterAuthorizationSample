@@ -113,7 +113,7 @@
         [Common setupAuthorizationRights:self->_authRef];
     }
     
-    [self.window makeKeyAndOrderFront:self];
+//    [self.window makeKeyAndOrderFront:self];
     
     // NinjiaMode
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
@@ -123,7 +123,7 @@
     _statusItem.highlightMode = NO;
     _statusItem.toolTip = @"control-click to quit";
     
-//    [_statusItem setAction:@selector(itemClicked:)];
+    [_statusItem setAction:@selector(itemClicked:)];
     
     [self refreshDarkMode];
     [self turnInternetOff];
@@ -359,6 +359,9 @@
                                    selector:@selector(timeUp:)
                                    userInfo:nil
                                     repeats:NO];
+    
+//    [self.window orderOut:self];
+    [self.window miniaturize:nil];
 }
 
 - (void)timeUp:(id)sender {
@@ -377,7 +380,8 @@
     }
 }
 
-//- (void)itemClicked:(id)sender {
+- (void)itemClicked:(id)sender {
+    [self.window makeKeyAndOrderFront:self];
 //    //Look for control click, close app if so
 //    NSEvent *event = [NSApp currentEvent];
 //    if([event modifierFlags] & NSControlKeyMask) {
@@ -398,7 +402,7 @@
 //    else {
 //        [self turnInternetOff];
 //    }
-//}
+}
 
 - (void)toggleTheme {
     NSString* path = [[NSBundle mainBundle] pathForResource:@"ThemeToggle" ofType:@"scpt"];
