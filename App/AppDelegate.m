@@ -344,11 +344,11 @@
     NSString * taskLength = [_taskLengthView stringValue];
     NSInteger intTaskLength = [taskLength integerValue];
     if (intTaskLength == 0) {
-        [self logWithFormat:@"Task Length is either 0 or not a number.\n"];
+        NSLog(@"Task Length is either 0 or not a number.\n");
         return;
     }
     
-    [self logWithFormat:@"%4d | %@ \n", intTaskLength, [_taskNameView stringValue]];
+    [self logWithFormat:@"%d | %@ \n", intTaskLength, [_taskNameView stringValue]];
     
     _taskNameView.stringValue = @"";
     _taskLengthView.stringValue = @"";
@@ -363,7 +363,7 @@
 
 - (void)timeUp:(id)sender {
     #pragma unused(sender)
-//    [self logWithFormat:@"timeUp\n"];
+    NSLog(@"timeUp\n");
     [self turnInternetOff];
 }
 
@@ -418,7 +418,7 @@
             [[self.helperToolConnection remoteObjectProxyWithErrorHandler:^(NSError * proxyError) {
                 [self logError:proxyError];
             }] turnInternetOff:^(NSString *version) {
-//                [self logWithFormat:@"Internet(OFF) = %@\n", version];
+                NSLog(@"Internet(OFF) = %@\n", version);
                 
                 if (_darkModeOn) {
                     [self toggleTheme];
@@ -438,7 +438,7 @@
             [[self.helperToolConnection remoteObjectProxyWithErrorHandler:^(NSError * proxyError) {
                 [self logError:proxyError];
             }] turnInternetOn:^(NSString *version) {
-//                [self logWithFormat:@"Internet(ON) = %@\n", version];
+                NSLog(@"Internet(ON) = %@\n", version);
                 
                 if (!_darkModeOn) {
                     [self toggleTheme];
@@ -446,8 +446,6 @@
             }];
         }
     }];
-//    system("networksetup -setwebproxystate Wi-Fi off");
-//    system("networksetup -setsecurewebproxystate Wi-Fi off");
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
