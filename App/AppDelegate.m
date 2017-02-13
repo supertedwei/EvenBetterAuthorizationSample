@@ -136,12 +136,14 @@
 }
 
 - (void)logText:(NSString *)text
-    // Logs the specified text to the text view.
+// Logs the specified text to the text view.
 {
     // any thread
     assert(text != nil);
+    NSFont *systemFont = [NSFont fontWithName:@"Courier" size: 12.0f];
+    NSDictionary * fontAttributes = [[NSDictionary alloc] initWithObjectsAndKeys:systemFont, NSFontAttributeName, nil];
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-        [[self.textView textStorage] appendAttributedString:[[NSAttributedString alloc] initWithString:text]];
+        [[self.textView textStorage] appendAttributedString:[[NSAttributedString alloc] initWithString:text attributes:fontAttributes]];
     }];
 }
 
