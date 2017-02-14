@@ -119,7 +119,7 @@
 //    [self.window makeKeyAndOrderFront:self];
     
     // NinjiaMode
-    [NSApp setActivationPolicy:NSApplicationActivationPolicyProhibited];
+    [NSApp setActivationPolicy:NSApplicationActivationPolicyAccessory];
     
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     _statusItem.image = [NSImage imageNamed:@"switchIcon.png"];
@@ -137,7 +137,7 @@
     _popover.animates = NO;
     
     [self refreshDarkMode];
-//    [self turnInternetOff];
+    [self turnInternetOff];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
@@ -395,6 +395,13 @@
 
 - (void)itemClicked:(id)sender {
     
+    //Look for control click, close app if so
+    NSEvent *event = [NSApp currentEvent];
+    if([event modifierFlags] & NSControlKeyMask) {
+        [[NSApplication sharedApplication] terminate:self];
+        return;
+    }
+    
     [self activatedPopover :nil];
     
 //    [self.window makeKeyAndOrderFront:self];
@@ -430,6 +437,7 @@
     NSView* view = _statusItem.button;
     [_popover showRelativeToRect:view.bounds ofView:view
                    preferredEdge:NSMaxYEdge];
+//    [_popover.contentViewController.view.window becomeKeyWindow];
     _shown = YES;
 }
 

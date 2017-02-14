@@ -49,4 +49,8 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+- (void)turnInternetOn;
+- (void)turnInternetOff;
+- (void)closePopover;
+
 @end
