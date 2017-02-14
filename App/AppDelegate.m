@@ -136,8 +136,42 @@
     _popover.delegate = self;
     _popover.animates = NO;
     
+    [self checkHelperApp];
+    
+}
+
+- (void) postInit
+{
     [self refreshDarkMode];
     [self turnInternetOff];
+}
+
+- (void) checkHelperApp
+{
+    [self connectAndExecuteCommandBlock:^(NSError * connectError) {
+        if (connectError != nil) {
+            [self logError:connectError];
+        } else {
+            [[self.helperToolConnection remoteObjectProxyWithErrorHandler:^(NSError * proxyError) {
+                [self logError:proxyError];
+                Boolean success = [self installHelper];
+                if (success) {
+                    [NSThread sleepForTimeInterval:1.0f];
+                    dispatch_sync(dispatch_get_main_queue(), ^{
+                        [self checkHelperApp];
+                    });
+                } else {
+                    [[NSApplication sharedApplication] terminate:self];
+                    return;
+                }
+            }] getVersionWithReply:^(NSString *version) {
+                [self logWithFormat:@"version = %@\n", version];
+                dispatch_sync(dispatch_get_main_queue(), ^{
+                    [self postInit];
+                });
+            }];
+        }
+    }];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
@@ -176,7 +210,7 @@
 {
     // any thread
     assert(error != nil);
-    [self logWithFormat:@"error %@ / %d\n", [error domain], (int) [error code]];
+    NSLog(@"error %@ / %d\n", [error domain], (int) [error code]);
 }
 
 - (void)connectToHelperTool
@@ -236,19 +270,29 @@
     Boolean             success;
     CFErrorRef          error;
     
-    success = SMJobBless(
-        kSMDomainSystemLaunchd,
-        CFSTR("com.example.apple-samplecode.NinjaMode.HelperTool"),
-        self->_authRef,
-        &error
-    );
+    success = [self installHelper];
+    
+}
 
+- (Boolean)installHelper
+{
+    Boolean             success;
+    CFErrorRef          error;
+    
+    success = SMJobBless(
+                         kSMDomainSystemLaunchd,
+                         CFSTR("com.example.apple-samplecode.NinjaMode.HelperTool"),
+                         self->_authRef,
+                         &error
+                         );
     if (success) {
-        [self logWithFormat:@"success\n"];
+        NSLog(@"success\n");
     } else {
         [self logError:(__bridge NSError *) error];
         CFRelease(error);
     }
+    
+    return success;
 }
 
 - (IBAction)getVersionAction:(id)sender
