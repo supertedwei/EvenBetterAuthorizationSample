@@ -119,6 +119,8 @@
 //    [self.window makeKeyAndOrderFront:self];
     
     // NinjiaMode
+    [NSApp setActivationPolicy:NSApplicationActivationPolicyProhibited];
+    
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     _statusItem.image = [NSImage imageNamed:@"switchIcon.png"];
     [_statusItem.image setTemplate:YES];
