@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C43BFFB11E492DCC00670A44 /* switchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C43BFFB01E492DCC00670A44 /* switchIcon.png */; };
 		C4D3D84E1E4EF64C003E543B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4D3D84D1E4EF64C003E543B /* Images.xcassets */; };
+		C4D6A6C51E52A7BB00BE7066 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D6A6C31E52A7BB00BE7066 /* MyViewController.m */; };
+		C4D6A6C61E52A7BB00BE7066 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4D6A6C41E52A7BB00BE7066 /* MyViewController.xib */; };
 		C4FF80211E49963B00188172 /* ThemeToggle.scpt in Resources */ = {isa = PBXBuildFile; fileRef = C4FF801F1E49963B00188172 /* ThemeToggle.scpt */; };
 		C4FF80221E49963B00188172 /* ThemeToggle.txt in Resources */ = {isa = PBXBuildFile; fileRef = C4FF80201E49963B00188172 /* ThemeToggle.txt */; };
 		E4AD7AA91608DC4C00F594A2 /* com.example.apple-samplecode.NinjaMode.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.NinjaMode.HelperTool */; };
@@ -54,6 +56,9 @@
 /* Begin PBXFileReference section */
 		C43BFFB01E492DCC00670A44 /* switchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchIcon.png; sourceTree = "<group>"; };
 		C4D3D84D1E4EF64C003E543B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C4D6A6C21E52A7BB00BE7066 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		C4D6A6C31E52A7BB00BE7066 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		C4D6A6C41E52A7BB00BE7066 /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
 		C4FF801F1E49963B00188172 /* ThemeToggle.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThemeToggle.scpt; sourceTree = "<group>"; };
 		C4FF80201E49963B00188172 /* ThemeToggle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ThemeToggle.txt; sourceTree = "<group>"; };
 		E40FA42317ABE58F00F6CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -173,6 +178,9 @@
 				E4ED7B8915E79B83002AD912 /* AppDelegate.h */,
 				E4ED7B8A15E79B83002AD912 /* AppDelegate.m */,
 				C4D3D84D1E4EF64C003E543B /* Images.xcassets */,
+				C4D6A6C21E52A7BB00BE7066 /* MyViewController.h */,
+				C4D6A6C31E52A7BB00BE7066 /* MyViewController.m */,
+				C4D6A6C41E52A7BB00BE7066 /* MyViewController.xib */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -260,6 +268,7 @@
 			files = (
 				C4FF80221E49963B00188172 /* ThemeToggle.txt in Resources */,
 				C4FF80211E49963B00188172 /* ThemeToggle.scpt in Resources */,
+				C4D6A6C61E52A7BB00BE7066 /* MyViewController.xib in Resources */,
 				C4D3D84E1E4EF64C003E543B /* Images.xcassets in Resources */,
 				C43BFFB11E492DCC00670A44 /* switchIcon.png in Resources */,
 				E4CBCCF315EBC58D0081DF5C /* MainMenu.xib in Resources */,
@@ -287,6 +296,7 @@
 			files = (
 				E4ED7B8B15E79B83002AD912 /* AppDelegate.m in Sources */,
 				E4ED7B8D15E79B83002AD912 /* main.m in Sources */,
+				C4D6A6C51E52A7BB00BE7066 /* MyViewController.m in Sources */,
 				E4CBCCEC15EBBB8D0081DF5C /* Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

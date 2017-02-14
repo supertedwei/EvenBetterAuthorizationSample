@@ -49,6 +49,7 @@
 
 #import "Common.h"
 #import "HelperTool.h"
+#import "MyViewController.h"
 
 #include <ServiceManagement/ServiceManagement.h>
 
@@ -76,6 +77,8 @@
 
 @property (atomic, copy,   readwrite) NSData *                  authorization;
 @property (atomic, strong, readwrite) NSXPCConnection *         helperToolConnection;
+@property (atomic, strong, readwrite) NSPopover *               popover;
+@property (assign, nonatomic) BOOL shown;
 
 @end
 
@@ -125,14 +128,20 @@
     
     [_statusItem setAction:@selector(itemClicked:)];
     
+    _popover = [[NSPopover alloc] init];
+    _popover.behavior = NSPopoverBehaviorApplicationDefined;
+    _popover.contentViewController = [[MyViewController alloc] initWithNibName:@"MyViewController" bundle:nil];
+    _popover.delegate = self;
+    _popover.animates = NO;
+    
     [self refreshDarkMode];
-    [self turnInternetOff];
+//    [self turnInternetOff];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
 {
     #pragma unused(sender)
-    return YES;
+    return NO;
 }
 
 - (void)logText:(NSString *)text
@@ -383,7 +392,11 @@
 }
 
 - (void)itemClicked:(id)sender {
-    [self.window makeKeyAndOrderFront:self];
+    
+    [self activatedPopover :nil];
+    
+//    [self.window makeKeyAndOrderFront:self];
+    
 //    //Look for control click, close app if so
 //    NSEvent *event = [NSApp currentEvent];
 //    if([event modifierFlags] & NSControlKeyMask) {
@@ -404,6 +417,26 @@
 //    else {
 //        [self turnInternetOff];
 //    }
+}
+
+- (void)closePopover {
+    [_popover performClose:self];
+    _shown = NO;
+}
+
+- (void)openPopover {
+    NSView* view = _statusItem.button;
+    [_popover showRelativeToRect:view.bounds ofView:view
+                   preferredEdge:NSMaxYEdge];
+    _shown = YES;
+}
+
+- (void)activatedPopover:(NSView*)sender {
+    if (_shown) {
+        [self closePopover];
+    } else {
+        [self openPopover];
+    }
 }
 
 - (void)toggleTheme {
