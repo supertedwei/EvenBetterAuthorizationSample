@@ -10,6 +10,7 @@
             <connections>
                 <outlet property="taskLengthView" destination="19H-au-BSa" id="cGa-pY-geO"/>
                 <outlet property="taskNameView" destination="ThZ-tl-QdH" id="6j5-a3-AN0"/>
+                <outlet property="textView" destination="sTX-DS-Mfb" id="0um-Ri-Ltu"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -66,6 +67,33 @@
                         <action selector="startTimerAction:" target="-2" id="Ndt-uL-eAM"/>
                     </connections>
                 </button>
+                <scrollView wantsLayer="YES" fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoe-hn-GFz">
+                    <rect key="frame" x="20" y="11" width="153" height="81"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <clipView key="contentView" ambiguous="YES" id="Lxy-PQ-9HY">
+                        <rect key="frame" x="1" y="1" width="136" height="79"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView ambiguous="YES" importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="sTX-DS-Mfb">
+                                <rect key="frame" x="0.0" y="-1" width="136" height="79"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="minSize" width="136" height="79"/>
+                                <size key="maxSize" width="463" height="10000000"/>
+                                <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="aw1-a6-vth">
+                        <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="KU2-aL-bte">
+                        <rect key="frame" x="137" y="1" width="15" height="79"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
             </subviews>
             <point key="canvasLocation" x="-11.5" y="167"/>
         </customView>

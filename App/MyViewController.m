@@ -15,6 +15,7 @@
 
 @property (nonatomic, assign, readwrite) IBOutlet NSTextField *  taskNameView;
 @property (nonatomic, assign, readwrite) IBOutlet NSTextField *  taskLengthView;
+@property (nonatomic, assign, readwrite) IBOutlet NSTextView *  textView;
 
 @end
 
@@ -38,7 +39,7 @@
         return;
     }
     
-    NSLog(@"% 4d | %@ \n", intTaskLength, [_taskNameView stringValue]);
+    [self logWithFormat:@"% 4d | %@ \n", intTaskLength, [_taskNameView stringValue]];
     
     _taskNameView.stringValue = @"";
     _taskLengthView.stringValue = @"";
@@ -61,6 +62,31 @@
 
 - (BOOL)canBecomeKeyWindow {
     return NO;
+}
+
+- (void)logWithFormat:(NSString *)format, ...
+// Logs the formatted text to the text view.
+{
+    va_list ap;
+    
+    // any thread
+    assert(format != nil);
+    
+    va_start(ap, format);
+    [self logText:[[NSString alloc] initWithFormat:format arguments:ap]];
+    va_end(ap);
+}
+
+- (void)logText:(NSString *)text
+// Logs the specified text to the text view.
+{
+    // any thread
+    assert(text != nil);
+    NSFont *systemFont = [NSFont fontWithName:@"Courier" size: 12.0f];
+    NSDictionary * fontAttributes = [[NSDictionary alloc] initWithObjectsAndKeys:systemFont, NSFontAttributeName, nil];
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        [[self.textView textStorage] appendAttributedString:[[NSAttributedString alloc] initWithString:text attributes:fontAttributes]];
+    }];
 }
 
 
