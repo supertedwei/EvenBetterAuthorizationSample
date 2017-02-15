@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.example.apple-samplecode.NinjaMode.App</string>
+	<string>com.example.apple-samplecode.NinjaMode.App2</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -19,7 +19,9 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.4</string>
+	<string>2</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSMainNibFile</key>
@@ -29,7 +31,7 @@
 	<key>SMPrivilegedExecutables</key>
 	<dict>
 		<key>com.example.apple-samplecode.NinjaMode.HelperTool</key>
-		<string>identifier "com.example.apple-samplecode.NinjaMode.HelperTool" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: Jiade Wei (ZT3TDPBNG7)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+		<string>identifier "com.example.apple-samplecode.NinjaMode.HelperTool" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Jiade Wei (5NJ8AN9UMP)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 	</dict>
 </dict>
 </plist>
