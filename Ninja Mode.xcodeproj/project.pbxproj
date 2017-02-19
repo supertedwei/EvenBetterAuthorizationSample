@@ -355,6 +355,7 @@
 		E4CD036F15E7A2C300FDC22C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "HelperTool/Ninja Mode.entitlements";
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				DEVELOPMENT_TEAM = 5NJ8AN9UMP;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
@@ -376,6 +377,7 @@
 		E4CD037015E7A2C300FDC22C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "HelperTool/Ninja Mode.entitlements";
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				DEVELOPMENT_TEAM = 5NJ8AN9UMP;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
